@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CactusScript : MonoBehaviour
 {
-    public Rigidbody2D cactusRigidbody;
+    public float moveSpeed = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +15,6 @@ public class CactusScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cactusRigidbody.velocity = Vector2.left * 2;
+        transform.position = transform.position + (Vector3.left * moveSpeed);
     }
 }
