@@ -5,13 +5,15 @@ using UnityEngine;
 public class CactusSpawnScript : MonoBehaviour
 {
     public GameObject Cactus;
-    public float spawnRate = 2;
+    public float minSpawnRate = 0.5f;
+    public float maxSpawnRate = 2.5f;
+    private float spawnRate;
     private float timer = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        spawnRate = Random.Range(minSpawnRate, maxSpawnRate);
     }
 
     // Update is called once per frame
@@ -26,6 +28,7 @@ public class CactusSpawnScript : MonoBehaviour
         {
             Instantiate(Cactus, transform.position, transform.rotation);
             timer = 0;
+            spawnRate = Random.Range(minSpawnRate, maxSpawnRate);
         }
     }
 }
