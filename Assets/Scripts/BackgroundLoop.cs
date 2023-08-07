@@ -17,7 +17,7 @@ public class BackgroundLoop : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.left * speed * Time.deltaTime);
-        if(transform.position.x < -4.19f)
+        if(transform.position.x < -4.169f)
         {
             transform.position = StartPosition;
         }
