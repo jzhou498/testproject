@@ -434,7 +434,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 555751980}
-  - component: {fileID: 555751984}
   - component: {fileID: 555751983}
   - component: {fileID: 555751982}
   - component: {fileID: 555751981}
@@ -453,8 +452,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555751979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.20333, y: -0.01, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.3313, y: 0.04, z: 0}
+  m_LocalScale: {x: 0.488, y: 0.6648, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -471,7 +470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1976b7b0cd02c49a49e9ad8432ab4506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cactusRigidbody: {fileID: 555751984}
+  moveSpeed: 0.01
 --- !u!61 &555751982
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -549,27 +548,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &555751984
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555751979}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.0001
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &949300034
 GameObject:
   m_ObjectHideFlags: 0
