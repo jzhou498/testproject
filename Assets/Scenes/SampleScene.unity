@@ -203,7 +203,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &52743782
 RectTransform:
@@ -339,7 +339,7 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -471,7 +471,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -90}
   m_LocalScale: {x: 0.8375, y: 1.5126, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -488,7 +488,7 @@ GameObject:
   - component: {fileID: 644415821}
   - component: {fileID: 644415819}
   - component: {fileID: 644415820}
-  m_Layer: 1
+  m_Layer: 0
   m_Name: background (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -567,7 +567,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644415818}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.169, y: 0, z: 0}
+  m_LocalPosition: {x: 4.187, y: 0, z: 0}
   m_LocalScale: {x: 0.11491202, y: 0.110073015, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -650,7 +650,7 @@ GameObject:
   - component: {fileID: 1266959582}
   - component: {fileID: 1266959581}
   - component: {fileID: 1266959580}
-  m_Layer: 1
+  m_Layer: 0
   m_Name: background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1059,6 +1059,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpStrength: 3
   myRigidBody: {fileID: 1677425779}
+  inputBuffer: 0
 --- !u!61 &1677425784
 BoxCollider2D:
   m_ObjectHideFlags: 0
